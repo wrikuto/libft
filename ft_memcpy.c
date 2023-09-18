@@ -6,7 +6,7 @@
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 20:36:36 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/06/03 20:26:34 by wrikuto          ###   ########.fr       */
+/*   Updated: 2023/09/16 17:49:30 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,22 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main()
-// {
-// 	char source[] = "Hello, World!";
-// 	char destination[20];
+int main()
+{
+	// char ft_source[] = "Hello, World!";
+	// char *ft_destination = NULL;
 
-// 	memcpy(destination, source, sizeof(source));
+	char source[] = "Hello, World!";
+	char *destination = NULL;
 
-// 	printf("Copied string: %s\n", destination);
+	// ft_memcpy(ft_destination, ft_source, sizeof(ft_source));
+	memcpy(destination, source, sizeof(source));
 
-// 	return (0);
-// }
+
+	// printf("Copied string: %s\n", ft_destination);
+	printf("Copied string: %s\n", destination);
+
+	return (0);
+}

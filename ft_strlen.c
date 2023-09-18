@@ -6,7 +6,7 @@
 /*   By: wrikuto <wrikuto@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 14:06:39 by wrikuto           #+#    #+#             */
-/*   Updated: 2023/06/04 22:31:56 by wrikuto          ###   ########.fr       */
+/*   Updated: 2023/09/16 15:20:32 by wrikuto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,16 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-// #include<stdio.h>
-// int main(void)
-// {
-// 	int len;
-// 	char s[] = "today";
+#include<stdio.h>
+int main(void)
+{
+	int len;
+	char s[] = "today";
 
-// 	len = ft_strlen(s);
-// 	printf("\"%s\" は %d 文字\n", s, len);
+	len = ft_strlen(s);
+	printf("\"%s\" は %d 文字\n", s, len);
 
-// 	printf("\"%s\" は %zu 文字\n", "hello world", ft_strlen("hello world"));
+	printf("\"%s\" は %zu 文字\n", "hello world", ft_strlen("hello world"));
 
-// 	return 0;
-// }
+	return 0;
+}
